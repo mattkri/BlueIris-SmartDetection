@@ -1,5 +1,5 @@
 # BlueIris-SmartDetection
-Python Script to Execute in BlueIris that submits triggered images to Google's AutoML Vision Classification cloud service and Sighthound's Vehicle Recognition service. Also with Pushbullet support.
+Python Script to Execute in BlueIris that submits triggered images to Google's AutoML Vision Classification cloud service and Sighthound's Vehicle Recognition service. Also with Pushbullet support. You can easily modify this script to detect people. I also have trained AutoML to detect people in my front door. Because of the angle of the camera up high, in my instance, it is not very good at detecting specific people, I'd probably need a hundred images of each individual to train them. Sighthound also has people detection but I seem to get a lot of false positives.
 
 
 Excuse the mess of code, I am not a coder at all. I just mashed stuff together and kept executing it until it worked.
