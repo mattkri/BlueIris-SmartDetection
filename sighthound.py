@@ -64,5 +64,7 @@ def sighthound(local_image_path):
      except EOFError:
       with open('data.pickle', 'wb') as f:
        pickle.dump(current_data, f, pickle.HIGHEST_PROTOCOL)
+     except FileNotFoundError:
+      os.open("prediction.pickle", os.O_CREAT | os.O_EXCL)
  if vehicle_detected != "":
   return vehicle_detected;
