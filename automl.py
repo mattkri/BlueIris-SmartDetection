@@ -47,4 +47,6 @@ def visionclassification(local_image_path, project_id, model_id, min_confidence_
       except EOFError:
        with open('prediction.pickle', 'wb') as f:
         pickle.dump(result.display_name, f, pickle.HIGHEST_PROTOCOL)
+      except FileNotFoundError:
+       os.open("prediction.pickle", os.O_CREAT | os.O_EXCL)
  return prediction;
